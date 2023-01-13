@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 RUN apt-get update \
-    && apt-get install -y libc6-dev vim nano make gcc tar wget build-essential
+    && apt-get install -y libc6-dev vim nano make gcc tar wget build-essential libreadline libreadline-dev
 
 RUN useradd -m nitcbase
 USER nitcbase
