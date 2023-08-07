@@ -1,8 +1,8 @@
 FROM ubuntu:20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
-ARG HOST_UID=$HOST_UID
-ARG HOST_GID=$HOST_GID
+ARG HOST_UID
+ARG HOST_GID
 
 RUN apt-get update \
     && apt-get install -y libc6-dev vim git nano make gcc tar wget build-essential libreadline-dev gdb
