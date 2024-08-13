@@ -2,10 +2,6 @@
 
 DIR="./NITCbase/"
 
-if [ ! -d "$DIR" ]; then
-	mkdir $DIR
-fi
-
 if [ -z "$(ls -A $DIR)" ]; then
 	cd $DIR
 	echo Downloading the NITCbase packages...
