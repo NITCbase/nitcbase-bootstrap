@@ -14,7 +14,7 @@ if [ -z "$(ls -A $DIR)" ]; then
 	mv nitcbase-master mynitcbase
 	mv xfs-interface-master XFS_Interface
 	(cd XFS_Interface && make)
-	mkdir -p {Disk,Files/Batch_Execution_Files,Files/Input_Files,Files/Output_Files}
+	mkdir -p Disk Files/Batch_Execution_Files Files/Input_Files Files/Output_Files
 	echo NITCbase package installed.
 
 else
